@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+  int ano_a, ano_n;
+
+  printf("---------------------------\n");
+  printf("DEPARTAMENTO DE TRANSITO\n");
+  printf("---------------------------\n");
+  printf("Ano atual (yyyy): ");
+  scanf("%d", &ano_a);
+
+   printf("Ano de nascimento (yyyy): ");
+  scanf("%d", &ano_n);
+
+  if((ano_a - ano_n)>=18)
+    printf("A pessoa está apta a tirar a CNH");
+  else
+    printf("A pessoa nao esta apta a tirar a CNH");
+  
+  return 0;
+}

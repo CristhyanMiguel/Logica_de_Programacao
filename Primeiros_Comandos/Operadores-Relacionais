@@ -1,0 +1,28 @@
+#include <math.h>
+#include <stdio.h>
+
+int main(void) {
+  float A, B, C;
+  int eq, es, tri;
+
+  printf("Lembrete, 0 = FALSO\n          1 = VERDADEIRO\n\n");
+
+  printf("Digite o primeiro lado: ");
+  scanf("%f", &A);
+
+  printf("Digite o segundo lado: ");
+  scanf("%f", &B);
+
+  printf("Digite o terceiro lado: ");
+  scanf("%f", &C);
+
+  tri = (A < B + C) && (B < A + C) && (C < A + B);
+  eq = (A == B) && (B == C);
+  es = (A != B) && (B != C) && (A != C);
+
+  printf("Ele pode ser um triangulo? %d\n", tri);
+  printf("O triangulo é equilatero? %d\n", eq);
+  printf("O triangulo é escaleno? %d\n", es);
+
+  return 0;
+}

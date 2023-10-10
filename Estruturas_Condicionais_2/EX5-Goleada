@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(void) {
+  int diferenca, g1, g2;
+
+  printf("Informe os gols do primeiro time: ");
+  scanf("%d", &g1);
+
+  printf("Informe os gols do segundo time: ");
+  scanf("%d", &g2);
+
+  if(g1 >= g2){
+    diferenca = g1 - g2;
+  }
+  else{
+    diferenca = g2 - g1;
+  }
+
+  printf("A diferença de gols foi de: %d\n", diferenca);
+  
+  if(diferenca >= 4){
+    printf("Partida: Goleada");
+  }
+  else{
+    if((diferenca < 4) && (diferenca >= 1)){
+      printf("Partida: Normal");
+    }
+    else
+      printf("Partida: Empate");
+  }
+
+  return 0;
+}

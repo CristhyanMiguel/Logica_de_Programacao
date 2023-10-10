@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void)
+{
+  float real, dolar;
+
+  printf("Informe quatos reais voce dejesa converter: ");
+  scanf("%f", &real);
+
+  dolar = real * 0.2;
+  
+  printf("Voce ficará com US$%f dolares", dolar);
+
+  return 0;
+}

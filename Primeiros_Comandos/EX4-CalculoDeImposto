@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+  float imposto, valor_de_compra;
+
+  printf("Voce sera taxado em  40%\n");
+  printf("Informe o valor total de suas compras: ");
+  scanf("%f", &valor_de_compra);
+
+  imposto = (valor_de_compra * 40)/100;
+
+  printf("Imposto: %f\n", imposto);
+  printf("No total voce gastara na viagem: %2.f", imposto + valor_de_compra);
+  
+  return 0;
+}

@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+  int dinheiro;
+
+  printf("Informe seu dinheiro: ");
+  scanf("%d", &dinheiro);
+
+  if(dinheiro>= 10000){
+    printf("Partil Disney");
+  }
+  else{
+    if ((dinheiro >= 5000) && (dinheiro < 10000)){
+      printf("Visistar familia");
+    }
+    else
+      printf("#chateado");
+  }
+  return 0;
+}

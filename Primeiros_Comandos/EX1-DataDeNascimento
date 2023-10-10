@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) 
+{
+  int ano_atual;
+  int ano_de_nascimento;
+
+  printf("Qual o ano em que voce nasceu? ");
+  scanf("%d", &ano_de_nascimento);
+
+  printf("Em que ano nós estamos? ");
+  scanf("%d", &ano_atual);
+
+  printf("Seu bolo de aniversario precise de %d velinhas", ano_atual - ano_de_nascimento);
+
+  return 0;
+}

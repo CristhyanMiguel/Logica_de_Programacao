@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main(void) {
+  int D;
+  float Valor;
+  
+  printf("---------------------\n");
+  printf("  Criança Esperança  \n");
+  printf("---------------------\n\n");
+  printf("Digite [1] para doar R$10\n");
+  printf("Digite [2] para doar R$25\n");
+  printf("Digite [3] para doar R$50\n");
+  printf("Digite [4] para doar outro valor\n");
+  printf("Digite [5] para cancelar\n");
+  scanf("%d", &D);
+
+  switch (D)
+    {
+      case 1:
+        Valor = 10;
+      break;
+
+      case 2:
+      Valor = 25;
+      break;
+
+      case 3:
+      Valor = 50;
+      break;
+
+      case 4:
+      printf("Qual o valor que deseja doar?");
+      scanf("%f", &Valor);
+      break;
+
+      case 5:
+      Valor = 0;
+      break;
+    }
+
+printf("Obrigado pela sua doação de R$ %2.f", Valor);
+  
+  return 0;
+}

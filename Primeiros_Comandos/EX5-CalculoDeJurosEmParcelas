@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+  float emprestimo, total, x;
+  int parcelas;
+
+  printf("Quanto voce deseja pegar de emprestimo: ");
+  scanf("%f", &emprestimo);
+
+  printf("Lembrando que voce tera 20 porcento de juros para pagar\n");
+  printf("Em quantas parcelas voce deseja efetuar o pagamento:");
+  scanf("%d", &parcelas);
+
+  total = (emprestimo * 20)/100;
+  x = total + emprestimo;
+  x = x / parcelas;
+
+  printf("Voce tera que pagar %d parcelas de R$%2.f", parcelas, x);
+  
+  return 0;
+}

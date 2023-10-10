@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+  int ano, nasc, idade;
+
+  printf("Em que ano estamos? ");
+  scanf("%d", &ano);
+
+  printf("Em que ano voce nasceu? ");
+  scanf("%d", &nasc);
+
+  idade = ano - nasc;
+
+  printf("Sua idade é %d anos", idade);
+
+  if(idade >= 18){
+    printf(" voce já está na maioridade");
+  }
+  
+  return 0;
+}
