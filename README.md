@@ -1,4 +1,3 @@
-# Lógica de Programação
+# Lógica de Programação - Estudos em C
 
-Repositótio contendo todos os códigos que adaptei das aulas do "curso de Algoritmos" do "Curso em Vídeo".
-A crianção deste tem como propósito complartilhar os meus estudos e também melhorar/iniciar na programação.
+Repositório dedicado aos meus estudos em lógica de programação utilizando a linguagem C.
